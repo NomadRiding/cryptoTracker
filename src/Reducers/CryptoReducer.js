@@ -21,7 +21,7 @@ export default function(state = initialState, action) {
       return Object.assign({}, state, {
         isFetching: false,
         data: action.payload,
-        hasError: falses,
+        hasError: false,
         errorMessage: null,
       });
     case FETCHING_COIN_DATA_FAIL:
